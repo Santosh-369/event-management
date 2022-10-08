@@ -1,0 +1,41 @@
+
+.backgr{
+    background-image: url('backgr.JPG');
+}
+.title{ 
+
+    text-align: center;
+}
+
+.events {
+    text-align: center;
+}
+    
+table {
+    text-align: center;
+}
+hr{
+    border-style:none;
+     border-top-style:dotted;
+     border-color:rgb(14, 13, 13);
+     border-width: 10px;
+     width:25%;
+}
+.MAINDIV{
+    width:70%;
+    height: 400px;
+    position:absolute;
+    left:50%;
+    top:60%;
+    transform:translate(-50%,-50%);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px black; 
+    animation:slider 6s infinite linear;   
+}
+@keyframes slider{
+    0%{background-image:url('blob:https://converter.11zon.com/6b864140-d35e-49a6-8676-5180c0226aff');}
+
+    35%{background-image:url('https://www.ucg.org/files/styles/full_grid9_breakpoints_theme_top_hat_wide_1x/public/image/article/life-lessons-three-traits-to-avoid-when-looking-for-a-husband_1.jpg?itok=_U66XLE8&timestamp=1512418276');}
+
+    75%{background-image:url('https://images.app.goo.gl/2HTHyYBRyobSTwB66');}
+}
