@@ -1,6 +1,90 @@
 
-.backgr{
-    background-image: url('backgr.JPG');
+:root {
+     --color-primary: #6c63ff;
+     --color-sucess: #00bf8e;
+     --color-warning: #f7c94b;
+     --color-danger: #f75842;
+     --color-danger-variant: rgba(247, 88, 66, 0.4);
+     --color-white:#fff;
+     --color-light: rgba(255,255,255,0.7);
+     --color-black: #000;
+     --color-bg: #1f2641;
+     --color-bg1: #2e32677;
+     --color-bg2: #424890;
+
+     --container-width-lg: 76%;
+     --container-width-md: 90%;
+     --container-width-sm: 94%;
+
+     --transition: all 400ms ease;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height:1.7;
+    color:var(--color-white);
+    background: var(--color-bg);
+}   
+.container{
+    width:var(--container-width-lg);
+    margin:0 auto;
+}
+Section{
+    padding: 6rem 0;
+}
+section h2{
+    text-align: centre;
+    margin-bottom: 4rem;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height:1.2;
+}
+h1{
+    font-size:2.4rem;
+}
+h4{
+    font-size:1.3rem;
+
+}
+a{
+    color: var(--color-white)
+}
+img{
+    width:100%;
+    display: block;
+    object-fit: cover;
+
+}
+.btn{
+    display: inline-block;
+    background: var(--color-white);
+    color:var(--color-bg);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.btn:hover{
+    background: transparent;
+    color: var(--color-white);
+    border-color:var(--color-white);
+}
+.btn-primary{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+nav{
+    background: red;
+    width: 100vw;
+    height:5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
 }
 .title{ 
 
@@ -22,20 +106,20 @@ hr{
      width:25%;
 }
 .MAINDIV{
+    background-image: url(https://images.pexels.com/photos/1456613/pexels-photo-1456613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     width:70%;
-    height: 400px;
+    height: 450px;
     position:absolute;
     left:50%;
     top:60%;
     transform:translate(-50%,-50%);
     background-size: 100% 100%;
-    box-shadow: 1px 2px 10px black; 
-    animation:slider 6s infinite linear;   
+    box-shadow: 1px 2px 5px 10px black; 
+    animation:slider 9s infinite linear;   
+    
 }
 @keyframes slider{
-    0%{background-image:url('blob:https://converter.11zon.com/6b864140-d35e-49a6-8676-5180c0226aff');}
-
-    35%{background-image:url('https://www.ucg.org/files/styles/full_grid9_breakpoints_theme_top_hat_wide_1x/public/image/article/life-lessons-three-traits-to-avoid-when-looking-for-a-husband_1.jpg?itok=_U66XLE8&timestamp=1512418276');}
-
-    75%{background-image:url('https://images.app.goo.gl/2HTHyYBRyobSTwB66');}
+   0%{background-image: url(https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg?auto=compress&cs=tinysrgb&w=600);}
+   35%{background-image: url(https://images.pexels.com/photos/860707/pexels-photo-860707.jpeg?auto=compress&cs=tinysrgb&w=600);}
+   75%{background-image: url(https://images.pexels.com/photos/821749/pexels-photo-821749.jpeg?auto=compress&cs=tinysrgb&w=600);}
 }
